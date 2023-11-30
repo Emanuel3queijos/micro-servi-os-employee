@@ -1,0 +1,21 @@
+
+spring:
+  application:
+    name: eureka-discovery-server
+
+server:
+  port: ${EUREKA_PORT:8761}
+
+eureka:
+  instance:
+    preferIpAddress: true
+    instance-id: ${eureka.instance.ip-address}:${server.port}
+
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    eviction-interval-timer-in-ms: 9000
+info:
+  tags:
+    environment: test
