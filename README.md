@@ -2,7 +2,6 @@
 
 
 ![img.png](img.png)
-Aqui está o README atualizado com as informações dos controllers adicionadas:
 
 ## Instruções de Execução
 
